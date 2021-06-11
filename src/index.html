@@ -2,11 +2,18 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>fizzbuzz counter</title>
     <link rel="stylesheet" href="index.css">
+    <script defer src="./render.js"></script>
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <div id="container"">
+      <div id="value">0</div>
+      <div id="action-container">
+        <button class="action-button" onclick="newCounter.increaseCountByOne()">+1</button>
+        <button class="action-button" onclick="newCounter.resetCount()">reset</button>
+        <button class="action-button" onclick="newCounter.decreaseCountByOne()">-1</button>
+      </div>
+    </div>
   </body>
 </html>
